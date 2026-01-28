@@ -617,7 +617,7 @@ class Printer {
 }
 
 Main --> Calculator
-Main -> Printer
+Main --> Printer
 
 @enduml
 ----
@@ -630,15 +630,15 @@ Main -> Printer
 |Варіант |Розрахункові формули |Значення вхідних даних | Формат дати і часу
 
 |1
-|\[ R = x^2(x+1)/b - sin^2(x+a) ; s = \sqrt{\frac{+xb+}{+a+}}+cos^2 (x+b)^3 \]
+|\[ R = x^2(x+1)/b - sin^2(x+a) ; s = \sqrt{\frac{+x\cdot b+}{+a+}}+cos^2 (x+b)^3 \]
 |\[ \begin{+matrix+}{a=0.7}\\{b=0.05}\\{c=0.5}\end{+matrix+} \]
 |Дата у форматі рр-мм-дд
 |2
-|\[ f = \sqrt[3] {m \cdot tg t + \|c\cdot sin t \| } ; z = m\cdot cos(bt\cdot sin t)+c \]
+|\[ f = \sqrt[3] {m \cdot tg t + \|c\cdot sin t \| } ; z = m\cdot cos(b\cdot t\cdot sin t)+c \]
 |\[ \begin{+matrix+}{m=2}\\ {c=-1}\\{t=1.2}\\{b=0.7}\end{+matrix+} \]
 |Дата та час з точністю до мілісекунд
 |3
-|\[ y = {btg^2x} - {a \over {sin^2 x/a} } ; d=ae^{-\sqrt a}cos(bx/a)  \]
+|\[ y = {b\cdot tg^2x} - {a \over {sin^2 (x/a)} } ; d=a\cdot e^{-\sqrt a}cos(b\cdot x/a)  \]
 |\[ \begin{+matrix+}{a=3.2}\\{b=17.5}\\{x=-4.8}\end{+matrix+} \]
 |Місяць, день, рік, та день тижня
 |4
@@ -646,11 +646,11 @@ Main -> Printer
 |\[ \begin{+matrix+}{x=0.335}\\{y=0.025}\end{+matrix+} \]
 |Час у форматі гг:хх:сс
 |5
-|\[ s = x^3 tg^2 (x+b)^2 + {a \over \sqrt{x+b}} ; Q = {bx^2-a \over e^{ax}-1 }    \]
+|\[ s = x^3 tg^2 (x+b)^2 + {a \over \sqrt{x+b}} ; Q = {b\cdot x^2-a \over e^{a\cdot x}-1 }    \]
 |\[ \begin{+matrix+}{a=16.5}\\{b=3.4}\\{x=0.61}\end{+matrix+} \]
 |Дата у форматі дд міс рррр
 |6
-|\[ y = e^{-bt} sin(at+b)-\sqrt{\| bt+a \| } ; s = bsin(at^2cos2t)-1 \]
+|\[ y = e^{-bt} sin(a\cdot t+b)-\sqrt{\| b\cdot t+a \| } ; s = b\cdot sin(a\cdot t^2\cdot cos(2t))-1 \]
 |\[ \begin{+matrix+}{a=-0.5}\\{b=1.7}\\{t=0.44}\end{+matrix+} \]
 |Дата у форматі дд місяць рррр
 |7
@@ -658,7 +658,7 @@ Main -> Printer
 |\[ \begin{+matrix+}{a=1.1}\\{b=0.004}\\{x=0.2}\end{+matrix+} \]
 |День тижня, число і місяць
 |8
-|\[ a={2cos(x-\pi/6) \over 1/2+ sin^2y} ; b = 1 + { z^2 \over 3+z^2/5} \]
+|\[ a={2\cdot cos(x-\pi/6) \over 1/2+ sin^2y} ; b = 1 + { z^2 \over 3+z^2/5} \]
 |\[ \begin{+matrix+}{x=1.426}\\{y=-1.220}\\{z=3.5}\end{+matrix+} \]
 |Дата у форматі дд-мм-рр
 |9
@@ -674,7 +674,7 @@ Main -> Printer
 | \[ \begin{+matrix+}{x=1.246}\\{y=-1.23}\\{z=-3.5}\end{+matrix+} \]
 |Дата у форматі дд-мм-рр
 ^|12
-| \[ R=x^3 (x+1)/b-sin^2(x+a) ; \space s = \sqrt {\  \frac{\|xb\|}{a^{2/5}}} +cos (x+b)^2 \]
+| \[ R=x^3 (x+1)/b-sin^2(x+a) ; \space s = \sqrt {\  \frac{\|x\cdot b\|}{a^{2/5}}} +cos (x+b)^2 \]
 | \[ \begin{+matrix+}{a=0.7}\\{b=0.05}\\{c=0.5}\end{+matrix+} \]
 |Дата у форматі рр-мм-дд
 ^|13
@@ -682,7 +682,7 @@ Main -> Printer
 | \[ \begin{+matrix+}{x=1.85}\\{y=18.25}\\{z=-3.28}\end{+matrix+} \]
 |Місяць, день, рік та день тижня
 ^|14
-| \[ f= \sqrt[3]{m\cdot tgt + \|csint\|} ; \space z = mcos(\frac{b}{t} sint) - c \]
+| \[ f= \sqrt[3]{m\cdot tgt + \|c\cdot sint\|} ; \space z = m\cdot cos(\frac{b}{t} sint) - c \]
 |\[ \begin{+matrix+}{m=2}\\ {c=-1}\\{t=1.2}\\{b=0.7}\end{+matrix+} \]
 |Дата і час з точністю до мілісекунд
 ^|15
